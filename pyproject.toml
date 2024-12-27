@@ -7,7 +7,10 @@ authors = [
     { name = "Jacob Baldwin", email = "baldwinj30@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "polars>=1.18.0",
+    "requests>=2.32.3",
+]
 
 [project.scripts]
 cfb-ratings = "cfb_ratings:main"
@@ -15,3 +18,10 @@ cfb-ratings = "cfb_ratings:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipython>=8.31.0",
+    "python-dotenv>=1.0.1",
+    "ruff>=0.8.4",
+]
