@@ -1,0 +1,17 @@
+[project]
+name = "cfb-ratings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jacob Baldwin", email = "baldwinj30@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+cfb-ratings = "cfb_ratings:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
