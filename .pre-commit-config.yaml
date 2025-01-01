@@ -1,0 +1,19 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: linter
+        name: linter
+        language: system
+        entry: uv run ruff check
+        types: [python]
+    -   id: formatter
+        name: formatter
+        language: system
+        entry: uv run ruff format
+        types: [python]
+    -   id: mypy
+        name: mypy
+        language: system
+        pass_filenames: false
+        entry: uv run mypy .
+        types: [python]
